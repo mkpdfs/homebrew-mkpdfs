@@ -5,21 +5,21 @@
 class Mkpdfs < Formula
   desc "mkpdfs CLI - Handlebars templates to PDF from your terminal"
   homepage "https://mkpdfs.com"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mkpdfs/mkpdfs-cli/releases/download/v0.1.0/mkpdfs-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "848a125c8dcff1841ed04d130f089a6471348aa67676d1631ae8856bfe162222"
+      url "https://github.com/mkpdfs/mkpdfs-cli/releases/download/v0.2.0/mkpdfs-cli_0.2.0_darwin_amd64.tar.gz"
+      sha256 "00e8cad0307429b908e681f38e5b4cd61554cc4602cee54605e51c9db1dffa4b"
 
       define_method(:install) do
         bin.install "mkp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mkpdfs/mkpdfs-cli/releases/download/v0.1.0/mkpdfs-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "647804028bd4c9c2f0b89392b2c15ec58c72e357b0dd37482da4cb7d780d00c5"
+      url "https://github.com/mkpdfs/mkpdfs-cli/releases/download/v0.2.0/mkpdfs-cli_0.2.0_darwin_arm64.tar.gz"
+      sha256 "e5e5c1e445cda4617afc250c39fabd5fc3058ac20cb01781bcd72a4be0f37f37"
 
       define_method(:install) do
         bin.install "mkp"
@@ -29,15 +29,15 @@ class Mkpdfs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mkpdfs/mkpdfs-cli/releases/download/v0.1.0/mkpdfs-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "aaac181075eccc6bb3ba270f1333209bb4a18243c51850451835ebbbc9967974"
+      url "https://github.com/mkpdfs/mkpdfs-cli/releases/download/v0.2.0/mkpdfs-cli_0.2.0_linux_amd64.tar.gz"
+      sha256 "040c137442e304e891eda494db6586ae7aec41fa610a60aafbf3e224cd9b637a"
       define_method(:install) do
         bin.install "mkp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mkpdfs/mkpdfs-cli/releases/download/v0.1.0/mkpdfs-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "aea04bc9f543c6181430f4ea307a173f6fcacf6dbec458513cd3c74865a75b56"
+      url "https://github.com/mkpdfs/mkpdfs-cli/releases/download/v0.2.0/mkpdfs-cli_0.2.0_linux_arm64.tar.gz"
+      sha256 "782441b4051012e7abbab1c1f3f5ebda015d185b7d7915c8a66ad0b1f7bf8e68"
       define_method(:install) do
         bin.install "mkp"
       end
